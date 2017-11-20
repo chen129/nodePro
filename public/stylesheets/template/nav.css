@@ -1,0 +1,46 @@
+/* 头部样式 */
+header {
+	background-color: #000;
+	height: 50px;
+	line-height: 50px;
+}
+header .header {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* logo */
+.header .logo {
+	float: left;
+}
+.header .logo h1 {
+	font-size: 28px;
+}
+.logo h1 .logo-1 {
+	color: aliceblue;
+}
+.logo h1 .logo-2 {
+	color: #1296DB;
+}
+/* 网站导航 */
+.nav {
+	float: right;
+	width: 300px;
+}
+.nav .nav-list li {
+	float: left;
+	padding: 0 10px;
+	text-align: center;
+}
+.nav-list li a {
+	color: #F5F5F5;
+	font-size: 14px;
+}
+/* 登录与注册 */
+.user-login {
+	float: right;
+	padding: 0 10px;
+}
+.user-login a {
+	color: #5f9ea0;
+}

@@ -1,0 +1,11 @@
+{% extends "../template/layout.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+{% parent %}
+	<link rel="stylesheet" href="../../public/stylesheets/template/nav.css" />
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/template/login.css">
+{% endblock %}
+{% block content %}
+	{% include "../template/nav.html" %}
+	{% include "../template/login.html" %}
+{% endblock %}

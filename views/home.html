@@ -1,0 +1,71 @@
+{% extends "template/layout.html" %}
+{% block head %}
+{% parent %}
+	<link rel="stylesheet" href="/public/stylesheets/foreground/home.css" />
+	<link rel="stylesheet" href="/public/stylesheets/template/login.css" />
+	<link rel="stylesheet" href="../public/stylesheets/loading.css" />
+	<script type="text/javascript" src="/public/javascripts/home.js" ></script>
+	<script type="text/javascript" src="/public/javascripts/template/login.js" ></script>
+{% endblock %}
+{% block content %}
+	<!--<div id="LoadingBar"  style="position: absolute; width: 100%; height: 100%; z-index: 99999999;">
+		<div class="load-mod" style="position: absolute; width: 100%; height: 100%; background-color: #1296DB;"></div>
+		<div class="eye"></div>
+	</div>-->
+	
+    <!-- 图片遮罩 -->
+	<div class="mask">
+		<div class="mask-mode"></div>
+	</div>
+	
+	<!-- 内容展示 -->
+	<div class="main">
+		{% include "template/nav.html" %}
+		<!-- 主体 -->
+		<div class="content">
+			<!-- 这个是用来装x的 -->
+			<div class="focus">
+				<div class="focus-1"></div>
+				<div class="focus-2"></div>
+				<div class="focus-3"></div>
+				<div class="focus-4"></div>
+			</div>
+			
+			<div class="core">
+				<div class="core-text">
+					<h2>一只WEB前端小菜鸟</h2>
+					<h4>你想说什么！我能说什么？</h4>
+				</div>
+				<!-- line -->
+				<div class="core-line"></div>
+				<div class="core-link">
+					<a class="to-home" href="/front/index">我的主页</a>
+					<a class="to-me" href="#">关于我</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 登录模态框 -->
+	<div id="modal">
+		<div class="login">
+			<form id="login-form">
+				<p class="login-title">欢迎登录</p>
+				<p>
+					<label for="name" class="login-users text" ></label>
+					<input id="name" name="name" type="text" placeholder="请输入用户名..." />
+				</p>
+				<p>
+					<label for="pad" class="login-pad text" ></label>
+					<input id="pad" name="pad" type="password" placeholder="请输入密码..." />
+				</p>
+				<p>
+					<button type="submit" id="login-but">登 录</button><button id="dfuot" type="button">取 消</button>
+					<span class="register"><a href="#">忘记密码？</a>/<a href="#">注册</a></span>
+				</p>
+				<span id="msg"></span>
+			</form>
+		</div>
+	</div>
+	<!-- 代码片段 include-->
+{% endblock %}
